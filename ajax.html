@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="weather.css" type="text/css" />
+
+</head>
+
+<body>
+
+	<div class="container-fluid bg-primary">
+
+		<div class="well-lg  text-center text-white bg-primary">
+			<h3>Welcome to MyWeather.com</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-6">
+			<h4>Enter City Name</h4>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	<!--		Search Bar with Button-->
+	<div class="row justify-content-center content">
+		<div class="col-6">
+			
+
+			<form class="justify-content-center row ">
+
+				<div class="col-6 pr-1">
+
+					<input type="text" id="txtCity" class="form-control " placeholder="Search for..." autocomplete="on">
+
+				</div>
+
+				<button id="btn" class="btn btn-primary" type="button">Search</button>
+
+			</form>
+		</div>
+	</div>
+	<!--  result div-->
+	<div class="row justify-content-center">
+		<div class="col-3"></div>
+		<div class="col-5">
+			<div id="resultDiv"></div>
+		</div>
+		<div class="col-3"></div>
+	</div>
+	
+	
+	<div class="row">
+		
+		<div class="col-3" id="mainWeather">
+			
+		</div>
+		
+	</div>
+
+
+	<script src="weather.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
